@@ -153,7 +153,7 @@ LIB_LDLIBS_STATIC  = -l:libnvidia-modprobe-utils.a
 LIB_LDLIBS_SHARED  = -ldl -lcap
 ifeq ($(WITH_NVCGO), yes)
 LIB_CPPFLAGS       += -DWITH_NVCGO
-LIB_LDLIBS_SHARED  += -lpthread
+LIB_LDLIBS_SHARED  += -lseccomp -lpthread
 endif
 ifeq ($(WITH_LIBELF), yes)
 LIB_CPPFLAGS       += -DWITH_LIBELF
