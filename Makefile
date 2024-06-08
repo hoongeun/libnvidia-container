@@ -18,8 +18,8 @@
 ##### Global variables #####
 
 WITH_NVCGO   ?= yes
-WITH_LIBELF  ?= no
-WITH_TIRPC   ?= no
+WITH_LIBELF  ?= yes
+WITH_TIRPC   ?= yes
 WITH_SECCOMP ?= yes
 
 ##### Global definitions #####
